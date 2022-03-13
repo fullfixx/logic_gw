@@ -1,0 +1,134 @@
+
+*{
+    box-sizing: border-box;
+}
+.d-table{
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+.d-tr{
+    display: table-row;
+}
+.d-td{
+    display: table-cell;
+    text-align: center;
+    border: none;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+.d-td:not(.no-p){
+    padding: 4px;
+}
+.msg {
+    border: 3px solid #fa9f02;
+    border-radius: 3px;
+    padding: 7px;
+    text-align: center;
+    font-weight: bold;
+}
+.chat-plate {
+    padding: 5px;
+    border: 1px solid #62b677;
+    background-color: #c5f5d4;
+    opacity: .8;
+}
+.chat-plate-read {
+    padding: 5px;
+    border: 1px solid #9e9e9e;
+    background-color: #d0d0d0;
+    opacity: .8;
+}
+.chat-info {
+    color: white;
+    font-size: 0.8rem;
+    padding: 1px 5px;
+    border: 1px solid #62b677;
+    background-color: #62b677;
+}
+.chat-info-read {
+    color: white;
+    font-size: 0.8rem;
+    padding: 1px 5px;
+    border: 1px solid #9e9e9e;
+    background-color: #9e9e9e;
+}
+.chat-plate-primary {
+    padding: 5px;
+    border: 1px solid #c95757;
+    background-color: #ffd0d0;
+    opacity: .8;
+}
+.chat-info-primary {
+    color: white;
+    font-size: 0.8rem;
+    padding: 1px 5px;
+    border: 1px solid #c95757;
+    background-color: #c95757;
+}
+.towork-title {
+    background-image: url(../img/background4.png);
+    background-attachment: fixed;
+}
+.archive-bg {
+    background-image: url(../img/background66.jpg);
+    background-attachment: fixed;
+}
+.chat-title {
+    background-image: url(../img/background66.jpg);
+    background-attachment: fixed;
+}
+.plate-update {
+    padding: 1px 5px;
+    background-image: url(../img/white-flecks.png);
+    /*background-color: #afc2c7;*/
+    border: 1px solid #636363;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+.plate-checklist {
+    padding: 1px 5px;
+    background-color: #ffffff;
+    border: 1px solid #636363;
+    border-radius: 7px;
+    opacity: 0.95;
+}
+.status-filters {
+    float: right;
+}
+.modal-content {
+    background-image: url(../img/background29.png);
+}
+
+.fixmodal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.fixmodal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #4e555b;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 1s
+}
+.close-notice {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
